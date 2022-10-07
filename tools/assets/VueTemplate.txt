@@ -1,0 +1,35 @@
+<template>
+  <div>
+    <h1>#####</h1>
+  </div>
+</template>
+
+<script lang="ts">
+  import Vue from 'vue';
+
+  export interface I#####Props {}
+
+  export interface IData {}
+
+  export interface IComputed {}
+
+  export interface IMethods {}
+
+  export default Vue.extend<IData, IMethods, IComputed, I#####Props>( {
+    name : '#####',
+    props : {
+
+    },
+    data() {
+      return {
+
+      };
+    },
+    computed : {
+
+    },
+    methods : {
+
+    }
+  } );
+</script>

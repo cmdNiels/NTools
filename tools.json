@@ -1,0 +1,71 @@
+{
+  "help": {
+    "description": "Show help."
+  },
+  "vue": {
+    "options": [
+      {
+        "name": "component",
+        "description": "Generate a new boilerplate vue component."
+      }
+    ],
+    "description": "Different Vue.js tools."
+  },
+  "version": {
+    "description": "List NTools version."
+  },
+  "v": {
+    "description": "List NTools version."
+  },
+  "edit": {
+    "options": [
+      {
+        "name": "phpstorm",
+        "description": "Edit NTools in PhpStorm."
+      }
+    ],
+    "description": "Edit the NTools source code."
+  },
+  "time": {
+    "options": [
+      {
+        "name": "passed",
+        "description": "See how much time has passed since 09:00."
+      },
+      {
+        "name": "left",
+        "description": "See how much time is left until 17:30."
+      },
+      {
+        "name": "current",
+        "description": "See the current time."
+      },
+      {
+        "name": "progress",
+        "description": "Show a visual progress bar of the day."
+      }
+    ],
+    "description": "Different time tools."
+  },
+  "weather": {
+    "options": [
+      {
+        "name": "rain",
+        "description": "Show the local rain in a graph."
+      },
+      {
+        "name": "temperature",
+        "description": "Show the current temperature."
+      },
+      {
+        "name": "humidity",
+        "description": "Show the current humidity."
+      },
+      {
+        "name": "info",
+        "description": "Show live 'BuienRadar' data as JSON."
+      }
+    ],
+    "description": "Different weather tools."
+  }
+}
