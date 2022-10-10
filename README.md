@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/cmdNiels/ntools">
-    <img src="./tools/assets/images/favicon.png" alt="Favicon" width="100" height="40">
+    <img src="https://github.com/cmdNiels/NTools/blob/main/tools/assets/images/favicon.png?raw=true" alt="Favicon" width="100" height="40">
   </a>
 
 <h3 align="center">NTools</h3>
