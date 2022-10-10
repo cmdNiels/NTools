@@ -21,8 +21,5 @@
         "shelljs": "^0.8.5",
         "yargs": "^17.5.1"
     },
-    "publishConfig": {
-        "registry":"https://npm.pkg.github.com"
-    },
     "type": "module"
 }
