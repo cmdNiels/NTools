@@ -11,7 +11,7 @@ export default async function (args) {
         if(!args[1]) {
             return error('No arguments provided!')
         }
-        console.log('\n' + chalk.dim(template.replaceAll('#####', args)));
+        console.log('\n' + chalk.dim(template.replaceAll('#####', args[1])));
     }
 
     return listOptions('vue');
