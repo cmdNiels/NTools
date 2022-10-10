@@ -1,5 +1,6 @@
 {
     "name": "@cmdniels/ntools",
+    "private": false,
     "version": "0.2.0",
     "description": "NTools",
     "main": "index.js",
@@ -17,12 +18,16 @@
     "dependencies": {
         "axios": "^0.27.2",
         "chalk": "^5.0.1",
+        "eslint": "8.22.0",
         "open": "^8.4.0",
         "shelljs": "^0.8.5",
         "yargs": "^17.5.1"
     },
+    "type": "module",
     "publishConfig": {
-        "registry":"https://npm.pkg.github.com"
+        "access": "public"
     },
-    "type": "module"
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.19.1"
+    }
 }
