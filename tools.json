@@ -17,15 +17,6 @@
   "v": {
     "description": "List NTools version."
   },
-  "edit": {
-    "options": [
-      {
-        "name": "phpstorm",
-        "description": "Edit NTools in PhpStorm."
-      }
-    ],
-    "description": "Edit the NTools source code."
-  },
   "time": {
     "options": [
       {
