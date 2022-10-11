@@ -9,7 +9,7 @@ import fs from 'fs';
 import chalk from 'chalk';
 
 export function showHelp() {
-    log( '\nUsage:', '', '' );
+    log( 'Usage:', '', '' );
     log( '', 'ntools <tool> <option> <arguments>', '' );
     log( '\nOptions:', '', '' );
     Object.keys( tools ).map( ( i ) => {
@@ -20,17 +20,15 @@ export function showHelp() {
 
 export function showVersion() {
     const pkg = JSON.parse( fs.readFileSync( __dirname + '/package.json', 'utf8' ) );
-    console.log( chalk.blue( '\nv' + pkg.version + '\n\nCreated by cmdNiels' ) );
-    console.log();
+    console.log( chalk.blue( 'v' + pkg.version + '\n\nCreated by cmdNiels' ) );
 }
 
 export function listOptions( tool ) {
-    log( '\nUsage:', 'ntools ' + tool + ' <option> <arguments>', '' );
+    log( 'Usage:', 'ntools ' + tool + ' <option> <arguments>', '' );
     log( '\nOptions:', '', '' );
     for ( let i = 0; i < tools[ tool ].options.length; i++ ) {
         log( '', tools[ tool ].options[ i ].name, tools[ tool ].options[ i ].description );
     }
-    console.log();
 }
 
 export function log( t1, t2, t3 ) {
@@ -38,7 +36,7 @@ export function log( t1, t2, t3 ) {
 }
 
 export function error( t1 ) {
-    console.log( '\n' + chalk.red( t1 ) + '\n' );
+    console.log( chalk.red( t1 ) );
 }
 
 export function execute( command ){

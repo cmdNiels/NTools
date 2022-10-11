@@ -16,10 +16,7 @@ export default async function ( args ) {
             hoursPassed += 1;
             minutesPassed -= 60;
         }
-        log();
-        log( formatDigits( hoursPassed ) + ':' + formatDigits( minutesPassed ) + ' Left', '', '' );
-        log();
-        return;
+        return log( formatDigits( hoursPassed ) + ':' + formatDigits( minutesPassed ) + ' Left', '', '' );
     }
 
     if( args[ 0 ] === 'current' ) {
