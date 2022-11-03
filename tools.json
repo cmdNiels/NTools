@@ -11,6 +11,9 @@
     ],
     "description": "Different Vue.js tools."
   },
+  "update": {
+    "description": "Update NTools to the latest version."
+  },
   "node": {
     "options": [
       {
