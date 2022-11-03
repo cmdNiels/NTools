@@ -45,6 +45,4 @@ await import( './tools/' + tool + '.js' ).then( async ( module ) => {
     console.log();
     module.default( args );
     console.log();
-
-    process.exit( 1 );
 } );
