@@ -1,9 +1,10 @@
 {
     "name": "@cmdniels/ntools",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "NTools",
     "main": "index.js",
     "scripts": {
+        "dev": "echo dev",
         "release": "git push --follow-tags && npm publish"
     },
     "keywords": [
