@@ -11,6 +11,15 @@
     ],
     "description": "Different Vue.js tools."
   },
+  "node": {
+    "options": [
+      {
+        "name": "dev",
+        "description": "Run 'npm ci && npm run dev'"
+      }
+    ],
+    "description": "Different Vue.js tools."
+  },
   "version": {
     "description": "List NTools version."
   },
