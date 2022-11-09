@@ -1,11 +1,17 @@
-import { listOptions, log } from "../utils.js";
+import {error, listOptions, log} from "../utils.js";
+import moment from "moment";
 
 export default async function ( args ) {
     if( args[ 0 ] === 'passed' ) {
-        const date = new Date();
-        const hoursPassed = formatDigits( date.getHours() - 9 );
-        const minutesPassed = formatDigits( date.getMinutes() );
-        return log( hoursPassed + ':' + minutesPassed, '', '' );
+        if(!args[ 1 ]) {
+            return error('No time provided!');
+        }
+        const startTime = moment(args[ 1 ], 'HH:mm');
+        const endTime = moment();
+        const dif = moment.duration(endTime.diff(startTime));
+        const difference = [formatDigits(dif.hours()), formatDigits(dif.minutes())].join(':');
+
+        return log(difference);
     }
 
     if( args[ 0 ] === 'left' ) {
@@ -16,12 +22,11 @@ export default async function ( args ) {
             hoursPassed += 1;
             minutesPassed -= 60;
         }
-        return log( formatDigits( hoursPassed ) + ':' + formatDigits( minutesPassed ) + ' Left', '', '' );
+        return log( formatDigits( hoursPassed ) + ':' + formatDigits( minutesPassed ) + ' Left');
     }
 
     if( args[ 0 ] === 'current' ) {
-        const date = new Date();
-        return log( date.getHours() + ':' + date.getMinutes(), '', '' );
+        return log( moment().format('HH:mm'));
     }
 
     if( args[ 0 ] === 'progress' ) {
