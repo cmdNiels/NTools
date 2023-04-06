@@ -21,7 +21,7 @@
         "moment": "^2.29.4",
         "open": "^8.4.0",
         "shelljs": "^0.8.5",
-        "yargs": "^17.5.1"
+        "yargs": "^17.7.1"
     },
     "type": "module"
 }
