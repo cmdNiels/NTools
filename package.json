@@ -16,7 +16,7 @@
     "author": "cmdNiels",
     "license": "ISC",
     "dependencies": {
-        "axios": "^0.27.2",
+        "axios": "^1.6.4",
         "chalk": "^5.0.1",
         "moment": "^2.29.4",
         "open": "^8.4.0",
