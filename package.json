@@ -16,11 +16,11 @@
     "author": "cmdNiels",
     "license": "ISC",
     "dependencies": {
-        "axios": "^0.27.2",
+        "axios": "^1.8.2",
         "chalk": "^5.0.1",
         "moment": "^2.29.4",
         "open": "^8.4.0",
-        "shelljs": "^0.8.5",
+        "shelljs": "^0.9.0",
         "yargs": "^17.5.1"
     },
     "type": "module"
